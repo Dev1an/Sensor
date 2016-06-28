@@ -1,25 +1,104 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="2zL-oi-QZw">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Publications-->
+        <scene sceneID="TJa-G2-GzV">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Publications" id="77p-iZ-Zvd" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="4tA-q6-phs"/>
+                        <viewControllerLayoutGuide type="bottom" id="Nlk-pX-yV5"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="Gu6-l0-TNa">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Publications" id="dRH-i9-tV0"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c0a-zm-BM0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="923" y="728"/>
+        </scene>
+        <!--Sensor data-->
+        <scene sceneID="gUc-To-a1Y">
+            <objects>
+                <viewController title="Sensor data" id="Ej1-eG-wLM" customClass="SensorViewController" customModule="Sensor" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5Hl-38-5uL"/>
+                        <viewControllerLayoutGuide type="bottom" id="180-D9-EOJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="enM-Gu-ODv">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Izc-9k-xUX">
+                                <rect key="frame" x="20" y="28" width="560" height="51"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Gyroscope" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NF3-za-aFQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="560" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" misplaced="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="d8W-KS-6f6">
+                                        <rect key="frame" x="0.0" y="29" width="560" height="2"/>
+                                    </progressView>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" misplaced="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="caj-t0-TWo">
+                                        <rect key="frame" x="0.0" y="39" width="560" height="2"/>
+                                    </progressView>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" misplaced="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Gbt-ub-Krf">
+                                        <rect key="frame" x="0.0" y="49" width="560" height="2"/>
+                                    </progressView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="d8W-KS-6f6" secondAttribute="trailing" id="Ox9-Mq-6ua"/>
+                                    <constraint firstItem="d8W-KS-6f6" firstAttribute="trailing" secondItem="caj-t0-TWo" secondAttribute="trailing" id="dVZ-Fv-akm"/>
+                                    <constraint firstItem="Gbt-ub-Krf" firstAttribute="trailing" secondItem="d8W-KS-6f6" secondAttribute="trailing" id="uJT-Lv-AGj"/>
+                                    <constraint firstAttribute="trailing" secondItem="NF3-za-aFQ" secondAttribute="trailing" id="wak-sU-a9J"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="Izc-9k-xUX" secondAttribute="trailing" id="EUN-nU-85K"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="Izc-9k-xUX" secondAttribute="leading" id="fgK-Lf-PXn"/>
+                            <constraint firstItem="Izc-9k-xUX" firstAttribute="top" secondItem="5Hl-38-5uL" secondAttribute="bottom" constant="8" id="g2Y-7P-70u"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Sensors" id="Kl3-hM-VEd"/>
+                    <connections>
+                        <outlet property="pitch" destination="caj-t0-TWo" id="KCP-OG-bP7"/>
+                        <outlet property="roll" destination="d8W-KS-6f6" id="qt8-MN-CY8"/>
+                        <outlet property="yaw" destination="Gbt-ub-Krf" id="r4P-sK-Wbh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="swt-DB-401" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="922" y="67"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Dbg-Zs-3mM">
+            <objects>
+                <tabBarController id="2zL-oi-QZw" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="eDY-JR-EYr">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Ej1-eG-wLM" kind="relationship" relationship="viewControllers" id="ury-ie-xMi"/>
+                        <segue destination="77p-iZ-Zvd" kind="relationship" relationship="viewControllers" id="Fwh-HZ-Y6s"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sFV-TQ-1U4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="102" y="397"/>
         </scene>
     </scenes>
 </document>

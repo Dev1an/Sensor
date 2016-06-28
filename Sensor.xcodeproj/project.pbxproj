@@ -13,6 +13,8 @@
 		74B588111D20328E000D3419 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74B588101D20328E000D3419 /* Assets.xcassets */; };
 		74B588141D20328E000D3419 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74B588121D20328E000D3419 /* LaunchScreen.storyboard */; };
 		74B5881F1D20328E000D3419 /* SensorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B5881E1D20328E000D3419 /* SensorTests.swift */; };
+		74B5882A1D203661000D3419 /* GyroObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B588291D203661000D3419 /* GyroObserver.swift */; };
+		74B588321D207E2D000D3419 /* BluetoothManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B588311D207E2D000D3419 /* BluetoothManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		74B5881A1D20328E000D3419 /* SensorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SensorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		74B5881E1D20328E000D3419 /* SensorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorTests.swift; sourceTree = "<group>"; };
 		74B588201D20328E000D3419 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74B588291D203661000D3419 /* GyroObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GyroObserver.swift; sourceTree = "<group>"; };
+		74B588311D207E2D000D3419 /* BluetoothManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BluetoothManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +82,8 @@
 			isa = PBXGroup;
 			children = (
 				74B588091D20328E000D3419 /* AppDelegate.swift */,
+				74B588291D203661000D3419 /* GyroObserver.swift */,
+				74B588311D207E2D000D3419 /* BluetoothManager.swift */,
 				74B5880B1D20328E000D3419 /* ViewController.swift */,
 				74B5880D1D20328E000D3419 /* Main.storyboard */,
 				74B588101D20328E000D3419 /* Assets.xcassets */,
@@ -103,9 +109,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 74B588231D20328E000D3419 /* Build configuration list for PBXNativeTarget "Sensor" */;
 			buildPhases = (
+				74B588041D20328E000D3419 /* Resources */,
 				74B588021D20328E000D3419 /* Sources */,
 				74B588031D20328E000D3419 /* Frameworks */,
-				74B588041D20328E000D3419 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -201,6 +207,8 @@
 			files = (
 				74B5880C1D20328E000D3419 /* ViewController.swift in Sources */,
 				74B5880A1D20328E000D3419 /* AppDelegate.swift in Sources */,
+				74B588321D207E2D000D3419 /* BluetoothManager.swift in Sources */,
+				74B5882A1D203661000D3419 /* GyroObserver.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -392,6 +400,7 @@
 				74B588251D20328E000D3419 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		74B588261D20328E000D3419 /* Build configuration list for PBXNativeTarget "SensorTests" */ = {
 			isa = XCConfigurationList;
@@ -400,6 +409,7 @@
 				74B588281D20328E000D3419 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
